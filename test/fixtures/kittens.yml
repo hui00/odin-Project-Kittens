@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: kittens
+#
+#  id         :bigint           not null, primary key
+#  age        :integer
+#  cuteness   :integer
+#  name       :string
+#  softness   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  name: MyString
+  age: 1
+  cuteness: 1
+  softness: 1
+
+two:
+  name: MyString
+  age: 1
+  cuteness: 1
+  softness: 1
