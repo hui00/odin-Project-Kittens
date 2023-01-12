@@ -1,3 +1,10 @@
- require: rubocop-rails
- inherit_from:
-  - node_modules/@prettier/plugin-ruby/rubocop.yml
+require: rubocop-rails
+inherit_from:
+- node_modules/@prettier/plugin-ruby/rubocop.yml
+
+inherit_gem:
+  rubocop-rails_config:
+    - config/rails.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
