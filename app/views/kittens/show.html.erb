@@ -1,4 +1,11 @@
 <div>
+  <% if flash[:success] %>
+      <p><%= flash[:success] %></p>
+    <% end %>
   <h1 class="font-bold text-4xl">Kittens#show</h1>
   <p>Find me in app/views/kittens/show.html.erb</p>
+  <% @kitten.attributes.each do |attribute, value| %>
+    <p><%= attribute %>: <%= value %></p>
+  <% end %>
+  <%= link_to "destory", kitten_path(@kitten) , data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }   %>
 </div>
