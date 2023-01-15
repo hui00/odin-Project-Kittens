@@ -5,7 +5,6 @@ class KittensController < ApplicationController
       format.html
       format.json { render json: @kittens }
     end
-
   end
 
   def show
